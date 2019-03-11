@@ -171,6 +171,7 @@ img {
   overflow: hidden;
   height: 63px;
   position: relative;
+  border-radius: 10px;
 }
 .navbar a {
   float: left;
@@ -189,88 +190,95 @@ img {
   background-color: #ddd;
   color: #000;
 }
-.side-nav {
-  height: 100%;
-  max-width: 100px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  opacity: 0.9;
-  overflow-x: hidden;
-  padding-top: 20px;
-  transition: 0.5s;
-}
-.side-nav a {
-  padding: 10px 10px 10px 20px;
-  text-decoration: none;
-  font-size: 22px;
-  color: #ccc;
-  display: block;
-  transition: 0.3s;
-}
-.side-nav a:hover {
-  color: #fff;
-}
-.side-nav .btn-close {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 22px;
-  margin-left: 20px;
-}
 #main {
   transition: margin-left 0.5s;
   padding: 20px;
   overflow: hidden;
   width: 70%;
 }
-input[type="text"],
-input[type="password"] {
+.container {
+  padding: 16px;
+}
+.container .signButton {
+  display: flex;
+}
+.container #signUp {
+  max-width: 150px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+.container #signIn {
+  max-width: 150px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+.container #signUpHidden {
+  display: none;
+}
+.container input[type="text"],
+.container input[type="password"] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
+  border-radius: 10px;
 }
-input[type="text"]:focus,
-input[type="password"]:focus {
+.container input[type="text"]:focus,
+.container input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
+  border-radius: 10px;
 }
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-button {
+.container button {
   background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   opacity: 0.9;
+  border-radius: 10px;
 }
-button:hover {
+.container button:hover {
   opacity: 1;
 }
-.cancelbtn {
+.container .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
 }
-.cancelbtn,
-.signupbtn {
+.container .cancelbtn,
+.container .signupbtn {
   float: left;
   width: 50%;
 }
-.container {
-  padding: 16px;
-}
-.clearfix::after {
+.container .clearfix::after {
   content: "";
   clear: both;
   display: table;
+}
+.container .signinbtn {
+  max-width: 210px;
+}
+.toDo {
+  margin-top: 20px;
+}
+.toDo #whatToDo {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.demo {
+  font-size: 18px;
+}
+.demo input {
+  border: 1px solid black;
+  width: auto;
+  height: 20px;
 }
