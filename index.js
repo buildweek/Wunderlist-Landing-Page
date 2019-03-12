@@ -1,3 +1,28 @@
+class AboutImg {
+  constructor(item) {
+    this.item = item;
+    this.content = document.querySelector(
+      `.content[data-tab='${this.item.dataset.tab}']`
+    );
+    this.content = new Content(this.content);
+    this.item.addEventListener("click", () => this.itemClick());
+  }
+  itemClick() {
+    this.content.toggleContent();
+  }
+}
+class Content {
+  constructor(content) {
+    this.content = content;
+  }
+  toggleContent() {
+    this.content.classList.toggle("change");
+  }
+}
+const aboutImg = document
+  .querySelectorAll(".aboutImg")
+  .forEach(item => new AboutImg(item));
+
 let displayDate = new Date();
 document.getElementById("date").innerHTML = displayDate.toString();
 

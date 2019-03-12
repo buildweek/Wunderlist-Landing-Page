@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>WunderList 2.0</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Overpass|Indie+Flower|Roboto"
+      rel="stylesheet"
+    />
+
+    <link href="css/index.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container">
+      <p><span id="date"></span></p>
+      <nav class="navbar">
+        <span class="open-slide">
+          <a href="#" id="hiddenDiv" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li>
+            <a
+              class="getStarted"
+              href="https://youthful-hawking-cef0ae.netlify.com/"
+              >Get Started</a
+            >
+          </li>
+          <!-- <li><a href="#">Social</a></li> -->
+          <!-- <li><a href="#">Hobbies</a></li> -->
+        </ul>
+      </nav>
+      <div id="main">
+        <section class="header-h1">
+          <h1>
+            WunderList 2.0
+            <span><input type="text" placeholder="Search.."/></span>
+          </h1>
+        </section>
+      </div>
+      <div class="aboutMain">
+        <h2>What is Lorem Ipsum?</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+      <div class="aboutImages">
+        <img
+          class="aboutImg"
+          data-tab="1"
+          src="images/information-main.jpg"
+          alt="a guy"
+        />
+        <img
+          class="aboutImg"
+          data-tab="2"
+          src="images/finnish.jpeg"
+          alt="paint bottles"
+        />
+        <img
+          class="aboutImg"
+          data-tab="3"
+          src="images/thesis-fisma.jpg"
+          alt="phone and papers"
+        />
+        <img
+          class="aboutImg"
+          data-tab="4"
+          src="images/adult-app-developer-business-1181244.jpg"
+          alt="laptop and phone"
+        />
+      </div>
+      <div class="aboutContent">
+        <div class="content" data-tab="1">
+          <h2>Edwin Torres</h2>
+          <h3>Team Leader</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined chunks as necessary, making this the first true
+            generator on the Internet.
+          </p>
+        </div>
+        <div class="content" data-tab="2">
+          <h2>Angel Torres</h2>
+          <h3>BackEnd Developer</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined chunks as necessary, making this the first true
+            generator on the Internet.
+          </p>
+        </div>
+        <div class="content" data-tab="3">
+          <h2>MD Hussen</h2>
+          <h3>FrontEnd Developer</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined chunks as necessary, making this the first true
+            generator on the Internet.
+          </p>
+        </div>
+        <div class="content" data-tab="4">
+          <h2>Tenzing Yeshi</h2>
+          <h3>UI Developer</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined chunks as necessary, making this the first true
+            generator on the Internet.
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <footer>
+          <nav>
+            <span><a href="#">Developer</a></span>
+            <span><a href="#">Contact</a></span>
+            <span><a href="#">Terms of Use</a></span>
+            <span><a href="#">Support</a></span>
+          </nav>
+        </footer>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
