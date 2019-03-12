@@ -159,15 +159,39 @@ p {
   margin: 0 20px;
 }
 img {
-  max-width: 500px;
-  width: 100%;
+  max-width: 480px;
+  width: 80%;
   height: auto;
 }
 .container {
-  max-width: 500px;
-  width: 100%;
+  max-width: 480px;
+  width: 90%;
   margin: 0 auto;
   background-color: #6195ed;
+}
+@media (max-width: 880px) {
+  .container {
+    max-width: 880px;
+    width: 90%;
+    background-color: #6195ed;
+  }
+  img {
+    max-width: 800px;
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    background-color: #6195ed;
+  }
+  img {
+    max-width: 950px;
+    width: 100%;
+    height: auto;
+  }
 }
 .navbar {
   background-color: #3b5998;
@@ -176,16 +200,20 @@ img {
   position: relative;
   border-radius: 10px;
   max-width: 480px;
-  margin-left: 10px;
+  width: 90%;
+  margin: 10px;
 }
 .navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 25px;
+  padding: 14px 20px;
   text-decoration: none;
   font-size: 16px;
+}
+.navbar a:first-child {
+  margin-left: 0;
 }
 .navbar .getStarted {
   background: #8c97ab;
@@ -216,15 +244,73 @@ img {
   height: 35px;
   border-radius: 10px;
 }
+@media (max-width: 880px) {
+  .navbar {
+    max-width: 880px;
+    width: 95%;
+  }
+  a {
+    display: flex;
+    color: #f2f2f2;
+    justify-content: space-between;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  max-width: 1024px;
+  width: 100%;
+  a {
+    display: flex;
+    color: #f2f2f2;
+    justify-content: space-between;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
 .footer {
-  margin: 20px;
+  max-width: 500px;
+  width: 95%;
+  margin-top: 20px;
   padding-bottom: 50px;
 }
-.footer a {
-  margin-left: 30px;
+.footer nav span a:first-child {
+  margin-left: 20px;
+}
+.footer nav span a {
+  display: inline-flex;
+  margin-left: 5px;
   font-size: 16px;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 880px) {
+  .footer {
+    max-width: 880px;
+    width: 90%;
+  }
+  nav a:first-child {
+    margin-left: 10px;
+  }
+  nav a {
+    display: inline-flex;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    max-width: 1024px;
+    width: 90%;
+  }
+  nav a:first-child {
+    margin-left: 0;
+  }
+  nav a {
+    display: inline-flex;
+    margin-left: 100px;
+  }
 }
 .demo {
   font-size: 18px;
