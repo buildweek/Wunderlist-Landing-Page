@@ -4,15 +4,18 @@
   margin-top: 20px;
   padding-bottom: 50px;
 
-  nav span a:first-child {
+  .footerAnchor:first-child {
     margin-left: 20px;
   }
-  nav span a {
+  .footerAnchor {
     display: inline-flex;
-    margin-left: 5px;
+    margin-left: 10px;
     font-size: 16px;
     text-decoration: none;
-    color: black;
+    color: white;
+    &:hover {
+      color: red;
+    }
   }
 }
 
@@ -20,13 +23,17 @@
   .footer {
     max-width: 880px;
     width: 90%;
-  }
-  nav a:first-child {
-    margin-left: 10px;
-  }
-  nav a {
-    display: inline-flex;
-    margin-left: 50px;
+    .footerAnchor:first-child {
+      margin-left: 10px;
+    }
+    .footerAnchor {
+      display: inline-flex;
+      margin-left: 100px;
+      color: white;
+      &:hover {
+        color: red;
+      }
+    }
   }
 }
 
@@ -34,12 +41,13 @@
   .footer {
     max-width: 1024px;
     width: 90%;
-  }
-  nav a:first-child {
-    margin-left: 0;
-  }
-  nav a {
-    display: inline-flex;
-    margin-left: 100px;
+    .footerAnchor {
+      display: inline-flex;
+      margin-left: 200px;
+      color: white;
+      &:hover {
+        color: red;
+      }
+    }
   }
 }

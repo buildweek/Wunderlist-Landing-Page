@@ -45,8 +45,6 @@ p {
 img {
   max-width: 480px;
   width: 100%;
-  // margin-left: 20px;
-  // margin-right: 20px;
   height: auto;
 }
 
@@ -63,11 +61,13 @@ img {
   margin: 0 20px;
 
   .aboutImg {
-    width: 105px;
+    max-width: 105px;
     height: 100px;
-    padding: 0px;
     border: 1px solid blue;
     border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -90,6 +90,19 @@ img {
     p {
       margin-top: 10px;
     }
+    span a {
+      text-decoration: none;
+      font-size: 16px;
+      animation: pulse 1s infinite;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      color: white;
+    }
+    100% {
+      color: @shark;
+    }
   }
   .change {
     display: block;
@@ -108,7 +121,16 @@ img {
     max-width: 800px;
     width: 80%;
     height: auto;
-    // margin-right: 20px;
+  }
+  .aboutImages {
+    margin: 0 20px;
+
+    .aboutImg {
+      max-width: 150px;
+      height: 200px;
+      border: 1px solid blue;
+      border-radius: 20px;
+    }
   }
 }
 
@@ -122,6 +144,15 @@ img {
     max-width: 950px;
     width: 100%;
     height: auto;
-    // margin-left: 20px;
+  }
+  .aboutImages {
+    margin: 0 20px;
+
+    .aboutImg {
+      max-width: 230px;
+      height: 200px;
+      border: 1px solid blue;
+      border-radius: 20px;
+    }
   }
 }

@@ -173,11 +173,13 @@ img {
   margin: 0 20px;
 }
 .aboutImages .aboutImg {
-  width: 105px;
+  max-width: 105px;
   height: 100px;
-  padding: 0px;
   border: 1px solid blue;
   border-radius: 10px;
+}
+.aboutImages .aboutImg:hover {
+  cursor: pointer;
 }
 .aboutContent {
   text-align: left;
@@ -199,6 +201,19 @@ img {
 .aboutContent .content p {
   margin-top: 10px;
 }
+.aboutContent .content span a {
+  text-decoration: none;
+  font-size: 16px;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #212529;
+  }
+}
 .aboutContent .change {
   display: block;
 }
@@ -213,6 +228,15 @@ img {
     width: 80%;
     height: auto;
   }
+  .aboutImages {
+    margin: 0 20px;
+  }
+  .aboutImages .aboutImg {
+    max-width: 150px;
+    height: 200px;
+    border: 1px solid blue;
+    border-radius: 20px;
+  }
 }
 @media (max-width: 1024px) {
   .container {
@@ -225,41 +249,56 @@ img {
     width: 100%;
     height: auto;
   }
+  .aboutImages {
+    margin: 0 20px;
+  }
+  .aboutImages .aboutImg {
+    max-width: 230px;
+    height: 200px;
+    border: 1px solid blue;
+    border-radius: 20px;
+  }
 }
 .navbar {
-  background-color: #3b5998;
-  overflow: hidden;
-  height: 63px;
-  position: relative;
-  border-radius: 10px;
-  max-width: 480px;
-  width: 90%;
-  margin: 10px;
+  display: flex;
+  justify-content: baseline;
 }
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 20px;
+.navbar ul {
+  display: flex;
+}
+.navbar .headerSpanAnchor {
+  margin-left: 10px;
+}
+.navbar .headerAnchor {
   text-decoration: none;
   font-size: 16px;
+  margin-left: 50px;
+  color: white;
 }
-.navbar a:first-child {
-  margin-left: 0;
+.navbar .headerAnchor:hover {
+  background-color: #ddd;
+  color: #000;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 .navbar .getStarted {
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 50px;
+  color: white;
   background: #8c97ab;
   border-radius: 10px;
+  padding: 5px 10px;
+}
+.navbar .getStarted:hover {
+  background-color: #ddd;
+  color: #000;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 .navbar ul {
   margin: 8px 0 0 0;
   list-style: none;
-}
-.navbar a:hover {
-  background-color: #ddd;
-  color: #000;
-  border-radius: 10px;
 }
 #main {
   transition: margin-left 0.5s;
@@ -278,29 +317,91 @@ img {
   border-radius: 10px;
 }
 @media (max-width: 880px) {
+  max-width: 880px;
+  width: 100%;
   .navbar {
     max-width: 880px;
-    width: 95%;
-  }
-  a {
+    width: 100%;
     display: flex;
-    color: #f2f2f2;
-    justify-content: space-between;
-    padding: 14px 25px;
+    justify-content: baseline;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar .headerSpanAnchor {
+    margin-left: 20px;
+  }
+  .navbar .headerAnchor {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 22px;
+    margin-left: 150px;
+    color: white;
+  }
+  .navbar .getStarted {
+    background: #8c97ab;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 700px;
+  }
+  .navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+  }
+  .navbar .headerAnchor:hover {
+    background-color: #ddd;
+    color: #000;
+    border-radius: 10px;
+    padding: 5px 10px;
   }
 }
 @media (max-width: 1024px) {
   max-width: 1024px;
   width: 100%;
-  a {
+  .navbar {
+    max-width: 1024px;
+    width: 100%;
     display: flex;
-    color: #f2f2f2;
-    justify-content: space-between;
-    padding: 14px 25px;
+    justify-content: baseline;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar .headerSpanAnchor {
+    margin-left: 20px;
+  }
+  .navbar .headerAnchor:nth-child(2) {
+    color: red;
+  }
+  .navbar .headerAnchor {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 22px;
+    margin-left: 180px;
+    color: white;
+  }
+  .navbar .headerAnchor:hover {
+    background-color: #ddd;
+    color: #000;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .navbar .getStarted {
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 180px;
+    color: white;
+    background: #8c97ab;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .navbar .getStarted:hover {
+    background-color: #ddd;
+    color: #000;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
   }
 }
 .footer {
@@ -309,27 +410,34 @@ img {
   margin-top: 20px;
   padding-bottom: 50px;
 }
-.footer nav span a:first-child {
+.footer .footerAnchor:first-child {
   margin-left: 20px;
 }
-.footer nav span a {
+.footer .footerAnchor {
   display: inline-flex;
-  margin-left: 5px;
+  margin-left: 10px;
   font-size: 16px;
   text-decoration: none;
-  color: black;
+  color: white;
+}
+.footer .footerAnchor:hover {
+  color: red;
 }
 @media (max-width: 880px) {
   .footer {
     max-width: 880px;
     width: 90%;
   }
-  nav a:first-child {
+  .footer .footerAnchor:first-child {
     margin-left: 10px;
   }
-  nav a {
+  .footer .footerAnchor {
     display: inline-flex;
-    margin-left: 50px;
+    margin-left: 100px;
+    color: white;
+  }
+  .footer .footerAnchor:hover {
+    color: red;
   }
 }
 @media (max-width: 1024px) {
@@ -337,12 +445,13 @@ img {
     max-width: 1024px;
     width: 90%;
   }
-  nav a:first-child {
-    margin-left: 0;
-  }
-  nav a {
+  .footer .footerAnchor {
     display: inline-flex;
-    margin-left: 100px;
+    margin-left: 200px;
+    color: white;
+  }
+  .footer .footerAnchor:hover {
+    color: red;
   }
 }
 .demo {
