@@ -12,14 +12,43 @@
     padding: 2%;
     font-size: 16px;
     text-decoration: none;
-    color: white;
+    color: midnightblue;
     &:hover {
       color: red;
+      background: #86a5d6;
     }
   }
   p {
     text-align: center;
     margin-top: 20px;
     color: white;
+  }
+}
+
+@media @desktop {
+  .footer {
+    max-width: 1024px;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    #footerAnchor {
+      max-width: 1024px;
+      width: 100%;
+      display: block;
+      justify-content: space-between;
+      border: 1px solid black;
+      padding: 1%;
+      font-size: 16px;
+      text-decoration: none;
+      color: midnightblue;
+      &:hover {
+        color: red;
+      }
+    }
+    p {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+    }
   }
 }

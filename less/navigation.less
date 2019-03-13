@@ -1,3 +1,6 @@
+#displayTime {
+  text-align: center;
+}
 .sidenav {
   height: 100%;
   width: 0;
@@ -5,7 +8,7 @@
   z-index: 0.2;
   top: 0;
   left: 0;
-  background-color: darkgray;
+  background-color: #588ee2;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -13,7 +16,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: @shark;
     display: block;
     transition: 0.3s;
     &:hover {
@@ -26,7 +29,7 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    color: #818181;
+    color: @shark;
   }
 }
 #span {
@@ -34,5 +37,18 @@
   margin-left: 20px;
   &:hover {
     cursor: pointer;
+  }
+}
+
+#getStarted {
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 0 100px 6px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  padding: 4px 4px 0 4px;
+  &:hover {
+    background: gray;
   }
 }

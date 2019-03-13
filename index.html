@@ -14,9 +14,9 @@
 <link href="css/index.css" rel="stylesheet" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
+<body onload=display_ct();>
 <div class="container">
-  <p><span id="date"></span></p>
+  <p id="displayTime"><span id="ct"></span></p>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="about.html">About</a>
@@ -24,7 +24,8 @@
       <a href="https://youthful-hawking-cef0ae.netlify.com/">Get Started</a>
       <a href="contact.html">Contact</a>
     </div>
-    <span id="span" onclick="openNav()">&#9776; WunderList 2.0 </span>
+    <span id="span" onclick="openNav()">&#9776; WunderList 2.0</span>
+    <span><a id="getStarted" href="https://youthful-hawking-cef0ae.netlify.com/">Get Started</a></span>
   <div class="main-article">
   <p>
     Keep your life in sync Wunderlist 2.0 is the easiest way to get stuff
@@ -77,9 +78,9 @@
       Presentation on the Milky Way.
     </label>
   </form>
-  
-    <img src="images/course-marketing.jpg" alt="watch" />
+
     <div class="getReminded">
+    <img src="images/course-marketing.jpg" alt="watch" />
     <h2>Get reminded anytime</h2>
     <p>
       Set Due Dates and Reminders and Assign to-dos. No matter whether your
@@ -87,9 +88,8 @@
       again with Wunderlist in charge.
     </p>
   </div>
-  
+  <div class="relaxe">
 <img src="images/animals-bed-calm-57627.jpg" alt="dogs sleeping">
-<div class="relaxe">
 <h2>Get adequate Sleep</h2>
 <p>Keep track of your sleeping habits. A good night’s sleep can enhance your memory
 and problem-solving skills. Maintaining a healthy sleep schedule helps you
@@ -100,13 +100,13 @@ prevent feelings of depression.
 <div class="footer">
   <footer>
     <nav>
-      <a id="footerAnchor" href="#">Developer</a>
-      <a id="footerAnchor" href="#">Contact</a>
+      <a id="footerAnchor" href="about.html">Developer</a>
+      <a id="footerAnchor" href="contact.html">Contact</a>
       <a id="footerAnchor" href="#">Terms of Use</a>
       <a id="footerAnchor" href="mailto:dummyWunder@example.com">Support</a>
     </nav>
   </footer>
-  <p>&copy; <=> 2019</p>
+  <p>&copy; 2019</p>
 </div>
 </div>
 <script src="index.js"></script>
