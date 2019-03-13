@@ -1,22 +1,30 @@
 class AboutImg {
   constructor(item) {
     this.item = item;
-    this.content = document.querySelector(
-      `.content[data-tab='${this.item.dataset.tab}']`
+    this.itemData = this.item.dataset.tab;
+
+    this.content = document.querySelectorAll(
+      // `.content[data-tab='${this.item.dataset.tab}']`
+      `.content[data-tab='${this.itemData}']`
     );
-    this.content = new Content(this.content);
+    this.content = Array.from(this.content).map(item => new Content(item));
+    // this.content = new Content(this.content);
     this.item.addEventListener("click", () => this.itemClick());
   }
   itemClick() {
-    this.content.toggleContent();
+    // this.content.toggleContent();
+    const content = document.querySelectorAll(".content");
+    content.forEach(item => (item.style.display = "none"));
+    this.content.forEach(item => item.displayContent());
   }
 }
 class Content {
   constructor(content) {
     this.content = content;
   }
-  toggleContent() {
-    this.content.classList.toggle("change");
+  displayContent() {
+    // this.content.classList.toggle("change");
+    this.content = this.content.style.display = "block";
   }
 }
 const aboutImg = document
@@ -26,32 +34,10 @@ const aboutImg = document
 let displayDate = new Date();
 document.getElementById("date").innerHTML = displayDate.toString();
 
-// function openSlideMenu() {
-//   // document.getElementById("side-menu").style.marginBottom = "150px";
-//   document.getElementById("main").style.marginTop = "150px";
-// }
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-// let hiddenDiv = document.getElementById("hiddenDiv");
-// hiddenDiv.addEventListener("click", function(event) {
-//   event.target.style.marginBottom = " 150px";
-//   event.target.style.textContent = "Hello";
-// });
-
-// function closeSlideMenu() {
-//   document.getElementById("side-menu").style.marginBottom = "0";
-//   document.getElementById("").style.marginTop = "0";
-// }
-
-// let signUp = document.getElementById("signUp");
-// signUp.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   document.getElementById("signUpHidden").style.display = "block";
-//   document.querySelector(".signinbtn").style.display = "none";
-// });
-
-// let signIn = document.getElementById("signIn");
-// signIn.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   document.getElementById("signUpHidden").style.display = "block";
-//   document.querySelector(".signupbtn").style.display = "none";
-// });
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

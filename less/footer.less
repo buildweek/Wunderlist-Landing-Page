@@ -1,15 +1,15 @@
 .footer {
   max-width: 500px;
-  width: 95%;
+  width: 100%;
   margin-top: 20px;
   padding-bottom: 50px;
-
-  .footerAnchor:first-child {
-    margin-left: 20px;
-  }
-  .footerAnchor {
-    display: inline-flex;
-    margin-left: 10px;
+  #footerAnchor {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2%;
     font-size: 16px;
     text-decoration: none;
     color: white;
@@ -17,37 +17,9 @@
       color: red;
     }
   }
-}
-
-@media @ipad {
-  .footer {
-    max-width: 880px;
-    width: 90%;
-    .footerAnchor:first-child {
-      margin-left: 10px;
-    }
-    .footerAnchor {
-      display: inline-flex;
-      margin-left: 100px;
-      color: white;
-      &:hover {
-        color: red;
-      }
-    }
-  }
-}
-
-@media @desktop {
-  .footer {
-    max-width: 1024px;
-    width: 90%;
-    .footerAnchor {
-      display: inline-flex;
-      margin-left: 200px;
-      color: white;
-      &:hover {
-        color: red;
-      }
-    }
+  p {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
   }
 }

@@ -7,7 +7,7 @@
 <title>WunderList 2.0</title>
 
 <link
-  href="https://fonts.googleapis.com/css?family=Overpass|Indie+Flower|Roboto"
+  href="https://fonts.googleapis.com/css?family=Monoton|Overpass|Indie+Flower|Roboto"
   rel="stylesheet"
 />
 
@@ -17,33 +17,15 @@
 <body>
 <div class="container">
   <p><span id="date"></span></p>
-  <nav class="navbar">
-    <span class="open-slide">
-      <a class="headerSpanAnchor" href="#">
-        <svg width="30" height="40">
-          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-        </svg>
-      </a>
-    </span>
-    <ul>
-      <li><a class="headerAnchor" href="index.html">Home</a></li>
-      <li><a class="headerAnchor" href="about.html">About Us</a></li>
-      <li><a class="getStarted" href="https://youthful-hawking-cef0ae.netlify.com/">Get Started</a></li>
-      <!-- <li><a href="#">Social</a></li> -->
-      <!-- <li><a href="#">Hobbies</a></li> -->
-    </ul>
-  </nav>
-  <div id="main">
-    <section class="header-h1">
-      <h1>
-        WunderList 2.0
-        <span><input type="text" placeholder="Search.."/></span>
-      </h1>
-    </section>
-  </div>
-  <div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="about.html">About</a>
+      <a href="index.html">Home</a>
+      <a href="https://youthful-hawking-cef0ae.netlify.com/">Get Started</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <span id="span" onclick="openNav()">&#9776; WunderList 2.0 </span>
+  <div class="main-article">
   <p>
     Keep your life in sync Wunderlist 2.0 is the easiest way to get stuff
     done. Whether you’re planning a holiday, sharing a shopping list with a
@@ -66,7 +48,7 @@
       be, Wunderlist makes it super easy to get stuff done.
     </p>
   </div>
-  <form class="demo" action="">
+  <form class="demo" action="#">
     <label>
       <input
         type="checkbox"
@@ -95,8 +77,9 @@
       Presentation on the Milky Way.
     </label>
   </form>
-  <div class="getReminded">
+  
     <img src="images/course-marketing.jpg" alt="watch" />
+    <div class="getReminded">
     <h2>Get reminded anytime</h2>
     <p>
       Set Due Dates and Reminders and Assign to-dos. No matter whether your
@@ -104,8 +87,9 @@
       again with Wunderlist in charge.
     </p>
   </div>
-  <div class="relaxe">
+  
 <img src="images/animals-bed-calm-57627.jpg" alt="dogs sleeping">
+<div class="relaxe">
 <h2>Get adequate Sleep</h2>
 <p>Keep track of your sleeping habits. A good night’s sleep can enhance your memory
 and problem-solving skills. Maintaining a healthy sleep schedule helps you
@@ -116,13 +100,13 @@ prevent feelings of depression.
 <div class="footer">
   <footer>
     <nav>
-      <a class="footerAnchor" href="#">Developer</a>
-      <a class="footerAnchor" href="#">Contact</a>
-      <a class="footerAnchor" href="#">Terms of Use</a>
-      <a class="footerAnchor" href="#">Support</a>
-
+      <a id="footerAnchor" href="#">Developer</a>
+      <a id="footerAnchor" href="#">Contact</a>
+      <a id="footerAnchor" href="#">Terms of Use</a>
+      <a id="footerAnchor" href="mailto:dummyWunder@example.com">Support</a>
     </nav>
   </footer>
+  <p>&copy; <=> 2019</p>
 </div>
 </div>
 <script src="index.js"></script>

@@ -7,7 +7,7 @@
     <title>WunderList 2.0</title>
 
     <link
-      href="https://fonts.googleapis.com/css?family=Overpass|Indie+Flower|Roboto"
+      href="https://fonts.googleapis.com/css?family=Monoton|Overpass|Indie+Flower|Roboto"
       rel="stylesheet"
     />
 
@@ -18,38 +18,17 @@
   <body>
     <div class="container">
       <p><span id="date"></span></p>
-      <nav class="navbar">
-        <span class="open-slide">
-          <a href="#" id="hiddenDiv" onclick="openSlideMenu()">
-            <svg width="30" height="30">
-              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-            </svg>
-          </a>
-        </span>
-        <ul>
-          <li><a class="headerAnchor" href="index.html">Home</a></li>
-          <li><a class="headerAnchor" href="about.html">About Us</a></li>
-          <li>
-            <a
-              class="getStarted"
-              href="https://youthful-hawking-cef0ae.netlify.com/"
-              >Get Started</a
-            >
-          </li>
-          <!-- <li><a href="#">Social</a></li> -->
-          <!-- <li><a href="#">Hobbies</a></li> -->
-        </ul>
-      </nav>
-      <div id="main">
-        <section class="header-h1">
-          <h1>
-            WunderList 2.0
-            <span><input type="text" placeholder="Search.."/></span>
-          </h1>
-        </section>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="https://youthful-hawking-cef0ae.netlify.com/">Get Started</a>
+        <a href="contact.html">Contact</a>
       </div>
+      <span id="span" onclick="openNav()">&#9776; WunderList 2.0 </span>
+
       <div class="aboutMain">
         <h2>Introduction</h2>
         <p>
@@ -61,8 +40,9 @@
           a way that is not covered by these guidelines, please contact us via
           support@wunderlist.com and include a visual mockup of intended use.
         </p>
+
         <div class="aboutMain">
-          <h2>Using the Wunderlist 2.0 brand</h2>
+          <h2>The Wunderlist 2.0 brand</h2>
           <p>
             If you’re creating an app, website or other service designed to be
             used with Wunderlist, give it a distinctive name. It’s fine to say
@@ -94,13 +74,13 @@
           class="aboutImg"
           data-tab="3"
           src="images/49564194_2302423019788754_5990451222878879744_o.jpg"
-          alt="phone and papers"
+          alt="MD Hussen"
         />
         <img
           class="aboutImg"
           data-tab="4"
           src="images/profile-copy.png"
-          alt="laptop and phone"
+          alt="Tenzing Yeshi"
         />
       </div>
       <div class="aboutContent">
@@ -166,10 +146,12 @@
       <div class="footer">
         <footer>
           <nav>
-            <a class="footerAnchor" href="#">Developer</a>
-            <a class="footerAnchor" href="#">Contact</a>
-            <a class="footerAnchor" href="#">Terms of Use</a>
-            <a class="footerAnchor" href="#">Support</a>
+            <a id="footerAnchor" href="#">Developer</a>
+            <a id="footerAnchor" href="#">Contact</a>
+            <a id="footerAnchor" href="#">Terms of Use</a>
+            <a id="footerAnchor" href="mailto:dummyWunder@example.com"
+              >Support</a
+            >
           </nav>
         </footer>
       </div>

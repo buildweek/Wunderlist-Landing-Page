@@ -160,11 +160,13 @@ p {
 }
 img {
   max-width: 480px;
-  width: 100%;
+  width: 94%;
   height: auto;
+  margin: 3%;
 }
 .container {
-  max-width: 480px;
+  max-width: 500px;
+  position: relative;
   width: 90%;
   margin: 0 auto;
   background-color: #6195ed;
@@ -173,13 +175,15 @@ img {
   margin: 0 20px;
 }
 .aboutImages .aboutImg {
-  max-width: 105px;
+  max-width: 18%;
   height: 100px;
-  border: 1px solid blue;
-  border-radius: 10px;
+  border: none;
 }
 .aboutImages .aboutImg:hover {
   cursor: pointer;
+}
+.aboutMain {
+  margin-top: 20px;
 }
 .aboutContent {
   text-align: left;
@@ -208,251 +212,88 @@ img {
 }
 @keyframes pulse {
   0% {
-    color: white;
+    color: #212529;
   }
   100% {
-    color: #212529;
+    color: #75e7f0;
   }
 }
 .aboutContent .change {
   display: block;
 }
-@media (max-width: 880px) {
-  .container {
-    max-width: 880px;
-    width: 90%;
-    background-color: #6195ed;
-  }
-  img {
-    max-width: 800px;
-    width: 80%;
-    height: auto;
-  }
-  .aboutImages {
-    margin: 0 20px;
-  }
-  .aboutImages .aboutImg {
-    max-width: 150px;
-    height: 200px;
-    border: 1px solid blue;
-    border-radius: 20px;
-  }
-}
-@media (max-width: 1024px) {
-  .container {
-    max-width: 1024px;
-    width: 100%;
-    background-color: #6195ed;
-  }
-  img {
-    max-width: 950px;
-    width: 100%;
-    height: auto;
-  }
-  .aboutImages {
-    margin: 0 20px;
-  }
-  .aboutImages .aboutImg {
-    max-width: 230px;
-    height: 200px;
-    border: 1px solid blue;
-    border-radius: 20px;
-  }
-}
-.navbar {
-  display: flex;
-  justify-content: baseline;
-}
-.navbar ul {
-  display: flex;
-}
-.navbar .headerSpanAnchor {
-  margin-left: 10px;
-}
-.navbar .headerAnchor {
-  text-decoration: none;
-  font-size: 16px;
-  margin-left: 50px;
-  color: white;
-}
-.navbar .headerAnchor:hover {
-  background-color: #ddd;
-  color: #000;
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-.navbar .getStarted {
-  text-decoration: none;
-  font-size: 16px;
-  margin-left: 50px;
-  color: white;
-  background: #8c97ab;
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-.navbar .getStarted:hover {
-  background-color: #ddd;
-  color: #000;
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-.navbar ul {
-  margin: 8px 0 0 0;
-  list-style: none;
-}
-#main {
-  transition: margin-left 0.5s;
-  padding: 20px;
-  overflow: hidden;
-  width: 90%;
-  display: block;
+.contact-article .contactH1 {
   text-align: center;
-}
-#main h1 {
   font-size: 30px;
+  margin: 20px 0;
 }
-#main input {
-  width: 200px;
-  height: 35px;
-  border-radius: 10px;
+.contact-article h2 {
+  font-size: 24px;
 }
-@media (max-width: 880px) {
-  max-width: 880px;
-  width: 100%;
-  .navbar {
-    max-width: 880px;
-    width: 100%;
-    display: flex;
-    justify-content: baseline;
-  }
-  .navbar ul {
-    display: flex;
-  }
-  .navbar .headerSpanAnchor {
-    margin-left: 20px;
-  }
-  .navbar .headerAnchor {
-    text-decoration: none;
-    font-size: 22px;
-    margin-left: 150px;
-    color: white;
-  }
-  .navbar .getStarted {
-    background: #8c97ab;
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin-left: 700px;
-  }
-  .navbar ul {
-    margin: 8px 0 0 0;
-    list-style: none;
-  }
-  .navbar .headerAnchor:hover {
-    background-color: #ddd;
-    color: #000;
-    border-radius: 10px;
-    padding: 5px 10px;
-  }
+.contact-article a {
+  text-decoration: none;
 }
-@media (max-width: 1024px) {
-  max-width: 1024px;
-  width: 100%;
-  .navbar {
-    max-width: 1024px;
-    width: 100%;
-    display: flex;
-    justify-content: baseline;
-  }
-  .navbar ul {
-    display: flex;
-  }
-  .navbar .headerSpanAnchor {
-    margin-left: 20px;
-  }
-  .navbar .headerAnchor:nth-child(2) {
-    color: red;
-  }
-  .navbar .headerAnchor {
-    text-decoration: none;
-    font-size: 22px;
-    margin-left: 180px;
-    color: white;
-  }
-  .navbar .headerAnchor:hover {
-    background-color: #ddd;
-    color: #000;
-    border-radius: 10px;
-    padding: 5px 10px;
-  }
-  .navbar .getStarted {
-    text-decoration: none;
-    font-size: 22px;
-    margin-left: 180px;
-    color: white;
-    background: #8c97ab;
-    border-radius: 10px;
-    padding: 5px 10px;
-  }
-  .navbar .getStarted:hover {
-    background-color: #ddd;
-    color: #000;
-    border-radius: 10px;
-    padding: 5px 10px;
-  }
-  .navbar ul {
-    margin: 8px 0 0 0;
-    list-style: none;
-  }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 0.2;
+  top: 0;
+  left: 0;
+  background-color: darkgray;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #818181;
+}
+#span {
+  font-size: 30px;
+  margin-left: 20px;
+}
+#span:hover {
+  cursor: pointer;
 }
 .footer {
   max-width: 500px;
-  width: 95%;
+  width: 100%;
   margin-top: 20px;
   padding-bottom: 50px;
 }
-.footer .footerAnchor:first-child {
-  margin-left: 20px;
-}
-.footer .footerAnchor {
-  display: inline-flex;
-  margin-left: 10px;
+.footer #footerAnchor {
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border: 1px solid black;
+  padding: 2%;
   font-size: 16px;
   text-decoration: none;
   color: white;
 }
-.footer .footerAnchor:hover {
+.footer #footerAnchor:hover {
   color: red;
 }
-@media (max-width: 880px) {
-  .footer {
-    max-width: 880px;
-    width: 90%;
-  }
-  .footer .footerAnchor:first-child {
-    margin-left: 10px;
-  }
-  .footer .footerAnchor {
-    display: inline-flex;
-    margin-left: 100px;
-    color: white;
-  }
-  .footer .footerAnchor:hover {
-    color: red;
-  }
-}
-@media (max-width: 1024px) {
-  .footer {
-    max-width: 1024px;
-    width: 90%;
-  }
-  .footer .footerAnchor {
-    display: inline-flex;
-    margin-left: 200px;
-    color: white;
-  }
-  .footer .footerAnchor:hover {
-    color: red;
-  }
+.footer p {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
 }
 .demo {
   font-size: 18px;
@@ -462,13 +303,16 @@ img {
   width: auto;
   height: 20px;
 }
+.main-article {
+  margin-top: 20px;
+}
 .article {
   margin-top: 20px;
 }
 .getReminded {
-  margin-top: 10px;
+  margin-top: 20px;
 }
-.getReminded h2 {
+.relaxe {
   margin-top: 20px;
 }
 .relaxe h2 {

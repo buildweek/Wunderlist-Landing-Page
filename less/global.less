@@ -44,12 +44,14 @@ p {
 
 img {
   max-width: 480px;
-  width: 100%;
+  width: 94%;
   height: auto;
+  margin: 3%;
 }
 
 .container {
-  max-width: 480px;
+  max-width: 500px;
+  position: relative;
   width: 90%;
   margin: 0 auto;
   background-color: @cornflower;
@@ -61,16 +63,17 @@ img {
   margin: 0 20px;
 
   .aboutImg {
-    max-width: 105px;
+    max-width: 18%;
     height: 100px;
-    border: 1px solid blue;
-    border-radius: 10px;
+    border: none;
     &:hover {
       cursor: pointer;
     }
   }
 }
-
+.aboutMain {
+  margin-top: 20px;
+}
 .aboutContent {
   text-align: left;
   margin-top: 20px;
@@ -98,10 +101,10 @@ img {
   }
   @keyframes pulse {
     0% {
-      color: white;
+      color: @shark;
     }
     100% {
-      color: @shark;
+      color: @spray;
     }
   }
   .change {
@@ -109,50 +112,19 @@ img {
   }
 }
 
-//////////////////////////////////////
-
-@media @ipad {
-  .container {
-    max-width: 880px;
-    width: 90%;
-    background-color: @cornflower;
+///////////////////////////
+.contact-article {
+  .contactH1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
   }
-  img {
-    max-width: 800px;
-    width: 80%;
-    height: auto;
+  h2 {
+    font-size: 24px;
   }
-  .aboutImages {
-    margin: 0 20px;
-
-    .aboutImg {
-      max-width: 150px;
-      height: 200px;
-      border: 1px solid blue;
-      border-radius: 20px;
-    }
+  a {
+    text-decoration: none;
   }
 }
 
-@media @desktop {
-  .container {
-    max-width: 1024px;
-    width: 100%;
-    background-color: @cornflower;
-  }
-  img {
-    max-width: 950px;
-    width: 100%;
-    height: auto;
-  }
-  .aboutImages {
-    margin: 0 20px;
-
-    .aboutImg {
-      max-width: 230px;
-      height: 200px;
-      border: 1px solid blue;
-      border-radius: 20px;
-    }
-  }
-}
+/////////////////////////////
