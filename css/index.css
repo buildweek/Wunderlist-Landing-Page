@@ -142,14 +142,14 @@ h5 {
   margin: 0 20px;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   padding-bottom: 10px;
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   padding-bottom: 10px;
 }
 p {
@@ -221,19 +221,20 @@ img {
   font-size: 30px;
   margin: 20px 0;
 }
-.contact-article h2 {
-  font-size: 24px;
-}
 .contact-article a {
   text-decoration: none;
 }
+.contact-article a:hover {
+  text-decoration: underline;
+  color: #664750;
+}
 @media (max-width: 1480px) {
   .container {
-    max-width: 1024px;
+    max-width: 880px;
     width: 100%;
   }
   img {
-    max-width: 1024px;
+    max-width: 880px;
     width: 94%;
     height: auto;
     margin: 3%;
@@ -252,7 +253,7 @@ img {
 }
 @media (max-width: 880px) {
   .container {
-    max-width: 880px;
+    max-width: 750px;
     width: 100%;
     background: #6195ed;
   }
@@ -277,10 +278,13 @@ img {
 }
 #displayTime {
   text-align: center;
+  padding: 3% 0;
+  margin: 0;
 }
 .sidenav {
   height: 100%;
   width: 0;
+  margin-top: 4%;
   position: absolute;
   z-index: 0.2;
   top: 0;
@@ -315,6 +319,15 @@ img {
 }
 #span:hover {
   cursor: pointer;
+}
+#span .fa {
+  transform: rotate(180deg);
+  animation: rotate 0.8s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-90deg);
+  }
 }
 #getStarted {
   font-size: 16px;
@@ -392,7 +405,7 @@ img {
 }
 @media (max-width: 1480px) {
   .footer {
-    max-width: 1024px;
+    max-width: 880px;
     width: 100%;
     margin-top: 5px;
     padding-bottom: 50px;
@@ -445,12 +458,21 @@ img {
   transform: scale(2);
   margin-left: 6%;
 }
+#form input[type="checkbox"]:checked {
+  background: red;
+}
+#form input[type="checkbox"]:checked:after {
+  background: red;
+}
 .howdy {
   text-align: center;
 }
 .howdy p {
   text-transform: uppercase;
   animation: pulse 1s infinite;
+}
+.howdy img:hover {
+  cursor: pointer;
 }
 @keyframes pulse {
   0% {

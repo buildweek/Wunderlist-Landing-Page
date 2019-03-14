@@ -49,9 +49,9 @@ function closeNav() {
 
 function show() {
   document.getElementById("thumpsDown").style.transform = "rotate(180deg)";
-  // document.getElementById("thumpsUp").style.display = "block";
+  document.getElementById("thumpsUp").style.display = "none";
 }
 function unShow() {
-  // document.getElementById("thumpsDown").style.display = "block";
+  document.getElementById("thumpsDown").style.display = "inline-block";
   document.getElementById("thumpsUp").style.transform = "rotate(180deg)";
 }
