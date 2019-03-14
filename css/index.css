@@ -171,9 +171,6 @@ img {
   margin: 0 auto;
   background-color: #6195ed;
 }
-#span {
-  margin-left: 20px;
-}
 .aboutImages {
   margin: 0 20px;
 }
@@ -258,9 +255,6 @@ img {
     max-width: 880px;
     width: 100%;
     background: #6195ed;
-  }
-  .flip-box {
-    display: none;
   }
 }
 @media (max-width: 650px) {
@@ -389,7 +383,7 @@ img {
   color: white;
 }
 .footer .fa-instagram {
-  background: #125688;
+  background: #d30d43;
   color: white;
 }
 .footer .fa-skype {
@@ -450,4 +444,19 @@ img {
 #form input[type="checkbox"] {
   transform: scale(2);
   margin-left: 6%;
+}
+.howdy {
+  text-align: center;
+}
+.howdy p {
+  text-transform: uppercase;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    color: #212529;
+  }
+  100% {
+    color: #75e7f0;
+  }
 }
