@@ -179,7 +179,7 @@ img {
 }
 .aboutImages .aboutImg {
   max-width: 18%;
-  height: 100px;
+  height: 80px;
   border: none;
 }
 .aboutImages .aboutImg:hover {
@@ -219,9 +219,6 @@ img {
     color: #75e7f0;
   }
 }
-.aboutContent .change {
-  display: block;
-}
 .contact-article .contactH1 {
   text-align: center;
   font-size: 30px;
@@ -236,6 +233,7 @@ img {
 @media (max-width: 1480px) {
   .container {
     max-width: 1024px;
+    width: 100%;
   }
   img {
     max-width: 1024px;
@@ -255,6 +253,34 @@ img {
     cursor: pointer;
   }
 }
+@media (max-width: 880px) {
+  .container {
+    max-width: 880px;
+    width: 100%;
+    background: #6195ed;
+  }
+  .flip-box {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    max-width: 650px;
+    width: 100%;
+    background: #6195ed;
+  }
+  .aboutImages {
+    margin: 0 20px;
+  }
+  .aboutImages .aboutImg {
+    max-width: 18%;
+    height: 120px;
+    border: none;
+  }
+  .aboutImages .aboutImg:hover {
+    cursor: pointer;
+  }
+}
 #displayTime {
   text-align: center;
 }
@@ -265,7 +291,7 @@ img {
   z-index: 0.2;
   top: 0;
   left: 0;
-  background-color: #588ee2;
+  background-color: #6195ed;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -311,7 +337,7 @@ img {
 .footer {
   max-width: 500px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 5px;
   padding-bottom: 50px;
 }
 .footer #footerAnchor {
@@ -333,12 +359,21 @@ img {
   text-align: center;
   margin-top: 20px;
   color: white;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    color: #083077;
+  }
+  100% {
+    color: #092524;
+  }
 }
 @media (max-width: 1480px) {
   .footer {
     max-width: 1024px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 5px;
     padding-bottom: 50px;
   }
   .footer #footerAnchor {
@@ -361,16 +396,8 @@ img {
     color: white;
   }
 }
-.demo {
-  font-size: 18px;
-}
-.demo input {
-  border: 1px solid black;
-  width: auto;
-  height: 20px;
-}
 .main-article {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .imgArticle {
   display: flex;
@@ -389,4 +416,11 @@ img {
 }
 .relaxe h2 {
   margin-top: 10px;
+}
+#form {
+  font-size: 16px;
+}
+#form input[type="checkbox"] {
+  transform: scale(2);
+  margin-left: 6%;
 }

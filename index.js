@@ -47,10 +47,11 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-const contact = document.getElementById("contact");
-contact.addEventListener("mouseover", function(event) {
-  event.target.style.textTransform = "uppercase";
-});
-contact.addEventListener("mouseout", function(event) {
-  event.target.style.textTransform = "lowercase";
-});
+function show() {
+  document.getElementById("thumpsDown").style.transform = "rotate(180deg)";
+  // document.getElementById("thumpsUp").style.display = "block";
+}
+function unShow() {
+  document.getElementById("thumpsDown").style.display = "block";
+  document.getElementById("thumpsUp").style.transform = "rotate(180deg)";
+}
