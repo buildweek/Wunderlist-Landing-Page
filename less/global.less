@@ -55,6 +55,46 @@ img {
   margin: 0 auto;
   background-color: @cornflower;
 }
+#headDiv {
+  display: flex;
+  animation: pulse 1s infinite;
+  .div {
+    height: 60px;
+    width: 8%;
+    padding: 1%;
+    color: @shark;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 4rem;
+    animation: pulse 1s infinite;
+    .fa {
+      transform: rotate(180deg);
+      animation: rotate 0.8s infinite linear;
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    color: @shark;
+  }
+  100% {
+    color: #ccff66;
+  }
+}
+@keyframes pulse {
+  0% {
+    background: @shark;
+  }
+  100% {
+    color: #ccff66;
+  }
+}
 .aboutImages {
   margin: 0 20px;
 
