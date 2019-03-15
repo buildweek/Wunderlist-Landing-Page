@@ -173,7 +173,8 @@ img {
 }
 #headDiv {
   display: flex;
-  animation: pulse 1s infinite;
+  animation: pulse 2s infinite;
+  margin-bottom: 1%;
 }
 #headDiv .div {
   height: 60px;
@@ -194,20 +195,71 @@ img {
     transform: rotate(-90deg);
   }
 }
+#headDiv .div12 {
+  background: #b30086;
+}
+#headDiv .div1 {
+  background: #5200cc;
+}
+#headDiv .div2 {
+  background: #5200cc;
+}
+#headDiv .div3 {
+  background: #c299ff;
+}
+#headDiv .div4 {
+  background: #5200cc;
+}
+#headDiv .div5 {
+  background: #80ff80;
+}
+#headDiv .div6 {
+  background: #5200cc;
+}
+#headDiv .div7 {
+  background: #ff9999;
+}
+#headDiv .div8 {
+  background: #5200cc;
+}
+#headDiv .div9 {
+  background: #ff704d;
+}
+#headDiv .div10 {
+  background: #5200cc;
+}
+#headDiv .div11 {
+  background: #5200cc;
+}
+#headDiv .div13 {
+  background: #5200cc;
+}
 @keyframes pulse {
   0% {
+    color: #990033;
+  }
+  33% {
     color: #212529;
   }
+  66% {
+    color: #003399;
+  }
   100% {
-    color: #ccff66;
+    color: #990033;
   }
 }
 @keyframes pulse {
   0% {
-    background: #212529;
+    color: #990033;
+  }
+  33% {
+    color: #212529;
+  }
+  66% {
+    color: #003399;
   }
   100% {
-    color: #ccff66;
+    color: #990033;
   }
 }
 .aboutImages {
@@ -249,10 +301,16 @@ img {
 }
 @keyframes pulse {
   0% {
+    color: #990033;
+  }
+  33% {
     color: #212529;
   }
+  66% {
+    color: #003399;
+  }
   100% {
-    color: #75e7f0;
+    color: #990033;
   }
 }
 .contact-article .contactH1 {
@@ -318,7 +376,7 @@ img {
 #displayTime {
   text-align: center;
   padding: 1% 0;
-  margin: 0;
+  margin: 1% 0;
 }
 .sidenav {
   height: 100%;
@@ -358,15 +416,6 @@ img {
 }
 #span:hover {
   cursor: pointer;
-}
-#span .fa {
-  transform: rotate(180deg);
-  animation: rotate 0.8s infinite linear;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(-90deg);
-  }
 }
 #getStarted {
   font-size: 16px;
@@ -425,22 +474,27 @@ img {
 .footer .fa-twitter {
   background: #55acee;
   color: white;
+  margin-left: 1%;
 }
 .footer .fa-google {
   background: #dd4b39;
   color: white;
+  margin-left: 1%;
 }
 .footer .fa-linkedin {
   background: #007bb5;
   color: white;
+  margin-left: 1%;
 }
 .footer .fa-instagram {
   background: #d30d43;
   color: white;
+  margin-left: 1%;
 }
 .footer .fa-skype {
   background: #00aff0;
   color: white;
+  margin-left: 1%;
 }
 @media (max-width: 1480px) {
   .footer {
@@ -497,12 +551,6 @@ img {
   transform: scale(2);
   margin-left: 6%;
 }
-#form input[type="checkbox"]:checked {
-  background: red;
-}
-#form input[type="checkbox"]:checked:after {
-  background: red;
-}
 .howdy {
   text-align: center;
 }
@@ -518,6 +566,6 @@ img {
     color: #212529;
   }
   100% {
-    color: #75e7f0;
+    color: #669999;
   }
 }
